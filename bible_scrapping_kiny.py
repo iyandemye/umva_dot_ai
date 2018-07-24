@@ -30,6 +30,6 @@ for book in books.keys():
     		f.writerow([verse_number, verse_content, audio])
 
 
-df = pd.read_csv("/Users/Jonathan/Downloads/Umva_dot_ai/bible_data.csv")
+df = pd.read_csv("PATH_TO_SAVED_FILE/bible_data.csv")
 clean_df = df[df["VerseContent"] != ' ']
 clean_df.to_csv("bible_data_clean.csv")
